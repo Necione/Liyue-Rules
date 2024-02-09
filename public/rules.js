@@ -26,4 +26,6 @@ const rules = [
     { id: "E2", rule: "Guilt Tripping is prohibited - Manipulating or coercing others by making them feel guilty to gain attention, favors, or validation is not allowed.", punishment: "User will be put on investigation, and will be muted until concluded", severity: "orange" },
     { id: "E3", rule: "Blackmailing is strictly prohibited - Threatening to reveal personal information or exert pressure on someone to act against their will or in a manner that benefits the blackmailer is forbidden.", punishment: "User will be put on investigation, and will be muted until concluded", severity: "red" },
     { id: "E4", rule: "Posting content that is INTENTIONALLY designed to trigger phobias, such as images, videos, or texts related to common phobias, without a clear warning and in non-designated areas, is not allowed.", punishment: "Possible mute or ban depending on severity", severity: "orange" },
+    { id: "F1", rule: "Sending DMs to advertise server content, such as collectables, cards, and other economy related things are not allowed.", punishment: "User will be fined up to 500 Coins, and wallet may be locked.", severity: "orange" },
+    { id: "F2", rule: "Exploting a bug for economic gain is strictly prohibited.", punishment: "Investigation. If found guilty, user will be banned with no chance of appeal", severity: "red" },
 ];
