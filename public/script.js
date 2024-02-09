@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const searchBar = document.getElementById('search-bar');
     const rulesList = document.getElementById('rules-list');
     
@@ -75,3 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayRules(rules); // Display all rules initially
 });
+
