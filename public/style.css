@@ -22,8 +22,8 @@ body, html {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: block; /* Ensure the button is a block element at the end of the rule box */
-    margin-top: 10px; /* Spacing between the rule/punishment and the button */
+    display: block;
+    margin-top: 10px;
 }
 
 .example-button:hover {
@@ -34,8 +34,8 @@ body, html {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 10px;
-    margin-top: 5px; /* Spacing between the button and the example content */
-    display: none; /* Initially hidden */
+    margin-top: 5px;
+    display: none;
 }
 
 .search-container {
@@ -53,46 +53,46 @@ body, html {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: calc(100vh - 40px); /* Adjust 40px to account for the margin-top and any additional padding you want at the bottom */
-    padding-bottom: 20px; /* Adjust as needed */
-    box-sizing: border-box; /* Ensures padding is included in the height calculation */
-    overflow-y: auto; /* Allows scrolling within the container if content exceeds its height */
+    height: calc(100vh - 40px); 
+    padding-bottom: 20px; 
+    box-sizing: border-box; 
+    overflow-y: auto; 
 }
 
 #rules-list {
     list-style: none;
-    padding: 0 10px; /* Adds padding inside the list for better spacing, adjust as needed */
-    width: 60%; /* Or adjust based on your layout needs */
-    max-height: 100%; /* Ensures the list does not exceed the container's height */
+    padding: 0 10px; 
+    width: 60%; 
+    max-height: 100%; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Allows scrolling within the list if content exceeds its height */
+    overflow-y: auto; 
 }
 
 .rule-item {
     padding: 10px;
     border-bottom: 1px solid #eee;
     display: flex;
-    flex-direction: column; /* Organize content vertically */
+    flex-direction: column; 
 }
 
 .rule-text {
     display: flex;
-    align-items: flex-start; /* Align items at the start of the flex container */
-    gap: 4px; /* Optional: adds a gap between inline elements */
+    align-items: flex-start; 
+    gap: 4px; 
 }
 
 .severity-indicator {
-    height: 15px; /* Fixed height */
-    width: 15px;  /* Fixed width */
-    min-width: 15px; /* Prevents squishing */
-    min-height: 15px; /* Prevents squishing */
-    max-width: 15px; /* Prevents stretching */
-    max-height: 15px; /* Prevents stretching */
+    height: 15px; 
+    width: 15px;  
+    min-width: 15px; 
+    min-height: 15px; 
+    max-width: 15px; 
+    max-height: 15px; 
     display: inline-block;
     margin-right: 5px;
     border-radius: 2px;
-    flex-shrink: 0; /* Prevents flexbox from shrinking it */
-    flex-grow: 0; /* Prevents flexbox from expanding it */
+    flex-shrink: 0; 
+    flex-grow: 0; 
 }
 
 .green {
