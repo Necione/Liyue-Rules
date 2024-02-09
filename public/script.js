@@ -1,16 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById('search-bar');
     const rulesList = document.getElementById('rules-list');
-
-    function convertLinks(text) {
-        // Adjusted regex to capture URLs
-        const urlRegex = /(\s|^)(https?:\/\/[^\s]+)/g;
-        return text.replace(urlRegex, (match, space, url) => {
-            // Adds a line break before each URL except the first in a sequence
-            return `${space === ' ' ? '<br>' : space}<a href="${url}" target="_blank">${url}</a>`;
-        });
-    }
-
+    
     function displayRules(rules) {
         const htmlString = rules.map((rule, index) => {
             const exampleText = examples[rule.id] ? examples[rule.id] : '';
@@ -21,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li id="rule-${index}" class="rule-item">
                     <div class="rule-text">
                         <span class="severity-indicator ${rule.severity}"></span>
-                        ${rule.id}: ${convertLinks(rule.rule)}
+                        ${rule.id}: ${rule.rule}
                     </div>
                     <div class="punishment-content">${rule.punishment}</div>
                     ${exampleButton}
