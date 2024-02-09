@@ -36,7 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+
+        document.querySelectorAll('.example-content img').forEach(img => {
+            img.addEventListener('click', () => {
+                const modal = document.getElementById('imageModal');
+                const modalImg = document.getElementById('modalImg');
+                const caption = document.getElementById('caption');
+                modal.style.display = "block";
+                modalImg.src = img.src;
+                caption.textContent = img.alt;
+            });
+        });
     }
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+        document.getElementById('imageModal').style.display = "none";
+    });
 
     function convertLinks(text) {
         const urlRegex = /(\s|^)(https?:\/\/[^\s]+)/g;
