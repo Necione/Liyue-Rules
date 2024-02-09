@@ -4,15 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function displayRules(rules) {
         const htmlString = rules.map((rule, index) => {
-            const exampleText = examples[rule.id] ? examples[rule.id] : '';
-            const exampleButton = exampleText ? `<button class="example-button" id="example-button-${index}">Example</button>` : '';
-            const exampleContent = exampleText ? `<div class="example-content" id="example-${index}" style="display: none;">${exampleText}</div>` : '';
+            const example = examples[rule.id];
+            const hasExample = example !== undefined;
+            const exampleButton = hasExample ? `<button class="example-button" id="example-button-${index}">Example</button>` : '';
+            const exampleContent = hasExample ? `
+                <div class="example-content" id="example-${index}" style="display: none;">
+                    <img src="${example.imgUrl}" alt="Example for ${rule.id}" style="max-width: 100%; height: auto;">
+                    <p>${example.text}</p>
+                </div>` : '';
     
             return `
                 <li id="rule-${index}" class="rule-item">
                     <div class="rule-text">
                         <span class="severity-indicator ${rule.severity}"></span>
-                        ${rule.id}: ${rule.rule}
+                        ${rule.id}: ${convertLinks(rule.rule)}
                     </div>
                     <div class="punishment-content">${rule.punishment}</div>
                     ${exampleButton}
@@ -30,6 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     exampleElement.style.display = exampleElement.style.display === 'none' ? 'block' : 'none';
                 });
             }
+        });
+    }
+
+    function convertLinks(text) {
+        const urlRegex = /(\s|^)(https?:\/\/[^\s]+)/g;
+        return text.replace(urlRegex, (match, space, url) => {
+            return `${space === ' ' ? '<br>' : space}<a href="${url}" target="_blank">${url}</a>`;
         });
     }
 
