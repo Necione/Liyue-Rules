@@ -23,4 +23,6 @@ const rules = [
     { id: "D1", rule: "Please keep serious channels serious. This includes Appreciations and Suggestions", punishment: "User will be given a 100 Coin fine", severity: "green" },
     { id: "D2", rule: "Please keep bot commands in the appropriate bot commands channel(s)", punishment: "User may be given a fine", severity: "green" },
     { id: "E1", rule: "Doxxing is strictly prohibited - Revealing any private personal information about members without their explicit consent, including but not limited to, real names, addresses, phone numbers, or any other sensitive data, is forbidden.", punishment: "Immediate ban with no chance of appeal", severity: "red" },
+    { id: "E2", rule: "Guilt Tripping is prohibited - Manipulating or coercing others by making them feel guilty to gain attention, favors, or validation is not allowed.", punishment: "User will be put on investigation, and will be muted until concluded", severity: "orange" },
+    { id: "E3", rule: "Blackmailing is strictly prohibited - Threatening to reveal personal information or exert pressure on someone to act against their will or in a manner that benefits the blackmailer is forbidden.", punishment: "User will be put on investigation, and will be muted until concluded", severity: "red" },
 ];
