@@ -13,7 +13,7 @@ const rules = [
     { id: "B7", rule: "Visually resembling minors in an erotic setting is strictly prohibited", punishment: "Immediate ban with no chance of appeal", severity: "red" },
     { id: "B8", rule: "Do not attempt to bypass our filters", punishment: "Immediate ban with little chance of appeal", severity: "orange" },
     { id: "B9", rule: "Do not incite conflicts between members of the server", punishment: "User will be flagged with possible mute", severity: "orange" },
-    { id: "B10", rule: "Do not indulge in acts of pedophilia", punishment: "Ismmediate ban with no chance of appeal", severity: "red" },
+    { id: "B10", rule: "Do not indulge in acts of pedophilia", punishment: "Immediate ban with no chance of appeal", severity: "red" },
     { id: "B11", rule: "The use of macros, automated scripts, or any form of automation for economic gain/benefit is prohibited", punishment: "User may be muted and given a fine", severity: "green" },
     { id: "C1", rule: "Treat all members with respect and dignity. Avoid insults, belittling comments, and aggressive behavior.", punishment: "User may be muted", severity: "orange" },
     { id: "C2", rule: "Refrain from any language that demeans, harasses, or discriminates against individuals based on race, ethnicity, gender identity, sexual orientation, religion, age, disability, or any other characteristic.", punishment: "User may be muted and given a fine", severity: "red" },
