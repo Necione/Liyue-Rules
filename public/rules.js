@@ -20,4 +20,7 @@ const rules = [
     { id: "C3", rule: "Maintain a polite discourse, even in disagreements. No shouting (all caps), excessive swearing, or provocations.", punishment: "User may be muted", severity: "orange" },
     { id: "C4", rule: "Be open to differing views without resorting to personal attacks or dismissive language.", punishment: "User may be muted", severity: "green" },
     { id: "C5", rule: "Joking or suggesting self-harm in any context is strictly forbidden.", punishment: "Immediate ban with no chance of appeal", severity: "red" },
+    { id: "D1", rule: "Please keep serious channels serious. This includes Appreciations and Suggestions", punishment: "User will be given a 100 Coin fine", severity: "green" },
+    { id: "D2", rule: "Please keep bot commands in the appropriate bot commands channel(s)", punishment: "User may be given a fine", severity: "green" },
+
 ];
