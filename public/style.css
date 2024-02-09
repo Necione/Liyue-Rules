@@ -102,7 +102,29 @@ body, html {
 }
 
 #rules-list::-webkit-scrollbar {
-    display: none;
+    width: 8px; 
+}
+
+#rules-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+#rules-list::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+}
+
+#rules-list::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#rules-list {
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+}
+
+.rules-container {
+    -ms-overflow-style: -ms-autohiding-scrollbar; 
 }
 
 .rule-item {
