@@ -30,4 +30,5 @@ const rules = [
     { id: "F2", rule: "Exploting a bug for economic gain is strictly prohibited", punishment: "Investigation. If found guilty, user will be banned with no chance of appeal", severity: "red" },
     { id: "G1", rule: "You may not ban evade", punishment: "Immediate ban with no chance of appeal", severity: "red" },
     { id: "G2", rule: "You may not have an ALT or use them in any way", punishment: "The ALT will be immediately banned with no chance of appeal. Repeat offences may result in the main account being banned too with little chance of appeal.", severity: "orange" },
+    { id: "G3", rule: "Do not use external evidence as proof of wrongdoing.", punishment: "Punishment may vary", severity: "orange" },
 ];
