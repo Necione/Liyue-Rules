@@ -63,6 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchBar.addEventListener('keyup', (e) => {
         const searchString = e.target.value.toLowerCase();
+
+        if (searchString === "show me the path") {
+            alert("https://pastebin.com/DT1EhH7Q");
+            return;
+        }
+
         const filteredRules = rules.filter((rule) => {
             return (
                 rule.rule.toLowerCase().includes(searchString) || 
